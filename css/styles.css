@@ -121,6 +121,22 @@ p {
 .link-nav {
   color: var(--brand-color);
 }
+.link-nav:is(:hover, :focus, :active) {
+  color: var(--theme-color);
+}
+.link-nav-underline {
+  position: relative;
+}
+.link-nav-underline:active::after {
+  content: '';
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--theme-color);
+  display: block;
+  margin-top: 28px;
+}
 .link-data {
   display: inline-flex;
   color: var(--pharagraph-color);
@@ -326,6 +342,7 @@ p {
 }
 .img-container {
   position: relative;
+  overflow: hidden;
 }
 .box-card {
   margin: 0;
@@ -339,10 +356,7 @@ p {
   color: var(--light-color);
 }
 .card figcaption {
-  padding: 20px 24px;
-}
-.img-container {
-  overflow: hidden;
+  padding: 20px 0 20px 24px;
 }
 .box-card {
   transform: translateY(100%);
