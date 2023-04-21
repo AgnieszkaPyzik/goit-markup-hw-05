@@ -171,7 +171,7 @@ p {
 .group-4 {
   background-color: var(--background-color);
 }
-.button-1st {
+.modal-button {
   font-family: var(--font-primary);
   background-color: var(--theme-color);
   color: var(--light-color);
@@ -184,7 +184,7 @@ p {
   padding: 10px 41px 10px 42px;
   margin-top: 30px;
 }
-.button-1st::first-letter {
+.modal-button::first-letter {
   text-transform: uppercase;
 }
 .button-main {
@@ -450,3 +450,40 @@ footer {
 .footer-social-icon svg:focus {
   background-color: var(--theme-color);
 }
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(0, 0, 0, 0.1);
+}
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.close-icon {
+  fill: #000000;  
+  justify-content: center;
+  align-items: center;
+ }
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  min-height: 581px;
+  transform:translate(-50%, -50%);
+  background-color: var(--light-color);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  }

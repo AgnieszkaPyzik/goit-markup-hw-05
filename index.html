@@ -55,7 +55,7 @@
             <a class="link-data" href="tel:+481111111">
               <svg class="icon-data-1" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone-1"></use></svg
-              >+48 111 11 11</a
+              >+48 111 111 111</a
             >
           </li>
         </ul>
@@ -69,7 +69,7 @@
             Efektywne rozwiązania<br />
             dla waszego biznesu
           </h1>
-          <button class="button-1st" type="button">zamów usługę</button>
+          <button class="modal-button" type="button" data-modal-open>zamów usługę</button>
         </div>
       </section>
       <!--2ga sekcja Lorem Ipsum-->
@@ -371,6 +371,13 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+   <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="close-icon" width="17" height="17">
+            <use href="./images/icons.svg#icon-close-black"></use></button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
