@@ -120,14 +120,12 @@ p {
 }
 .link-nav {
   color: var(--brand-color);
+  position: relative;
 }
 .link-nav:is(:hover, :focus, :active) {
   color: var(--theme-color);
 }
-.link-nav-underline {
-  position: relative;
-}
-.link-nav-underline:active::after {
+.link-nav:active::after {
   content: '';
   position: absolute;
   width: 53px;
@@ -400,7 +398,8 @@ footer {
 .link-end {
   font-family: var(--font-primary);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 .link-maps {
@@ -408,7 +407,6 @@ footer {
 }
 .link-end {
   color: rgba(255, 255, 255, 0.6);
-  row-gap: 9px;
 }
 .link-maps:hover,
 .link-maps:focus,
@@ -425,7 +423,8 @@ footer {
   column-gap: 70px;
 }
 .link-footer {
-  padding: 20px 15px 60px 0;
+  padding: 20px 0 60px 0;
+ 
 }
 .footer-social {
   text-transform: uppercase;
@@ -474,7 +473,7 @@ footer {
 .close-icon {
   fill: #000000;  
   display: flex;
-  justify-content: center;
+  justify-items: center;
   align-content: center;
   margin: auto;
 }
